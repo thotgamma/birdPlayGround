@@ -1,7 +1,9 @@
-main:
-	g++ boid.cpp -lglut -lGL -std=c++11
+make:
+	g++ -framework OpenGL -framework GLUT -framework Foundation -Wno-deprecated -std=c++11 main.cpp -o birdSim 
+
 run:
-	./a.out
+	./oceanSim
+
 quick:
-	g++ boid.cpp -lglut -lGL -std=c++11
-	./a.out
+	g++ -framework OpenGL -framework GLUT -framework Foundation -Wno-deprecated -std=c++11 main.cpp -o birdSim
+	./oceanSim
